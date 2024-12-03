@@ -143,16 +143,4 @@ public class RevisedHistoricalEvent extends HistoricalEvent {
 			return super.equals(other) && this.revisedDescription.equals(otherEvent.revisedDescription) && this.citation.equals(otherEvent.citation);
 		}
 	}
-
-	/*
-	* Output to console structured to educate people about historical events, showing the past
-	* versions many have been educated with vs. the revised history, correcting misinformation
-	* and providing a source for further learning
-	*/
-	public void teach() {
-		System.out.println("The following \"history\" was told for many years: \n\n" + super.toString());
-		System.out.println("\n\n\nBy correcting history, not just rewritting it, we are revising it to embark on the process of righting a wrong. \nHere is the revised history:\n " + this.revisedDescription);
-		System.out.println("\n\nSource: " + this.citation);
-	}
-
 }
